@@ -19,8 +19,11 @@ template <typename T> inline bool chmax(T& a, const T& b) { bool compare = a < b
 // clang-format on
 
 void logic()
-{
-    // write your code here
+{ // write your code here
+
+    string s, t;
+    cin >> s >> t;
+    YesNo(s < t);
 }
 
 int main()
