@@ -20,7 +20,12 @@
       "id": "abc217_b",
       "label": "B",
       "title": "AtCoder Quiz",
-      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_b"
+      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc217_c",

@@ -7,6 +7,7 @@
 #include <atcoder/all>
 using namespace std;
 using namespace atcoder;
+namespace adaptor = boost::adaptors;
 // clang-format off
 #pragma GCC target("avx")
 #pragma GCC optimize("O3")
@@ -21,7 +22,17 @@ template <typename T> inline bool chmax(T& a, const T& b) {bool compare=a<b;if(a
 
 void logic()
 {
-    // write your code here
+    vector<string> contests = {"ABC"s, "AGC"s, "AHC"s, "ARC"s};
+    vector data = getlines<string>();
+    sort(data.begin(), data.end());
+    for (const auto &c : contests | adaptor::indexed())
+    {
+        if (c.value() != data[c.index()])
+        {
+            cout << c.value() << endl;
+            break;
+        }
+    }
 }
 
 int main()
