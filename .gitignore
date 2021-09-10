@@ -27,9 +27,6 @@
 *.lib
 
 # Executables
-*.exe
-*.out
-*.app
 main
 
 # Other settings
