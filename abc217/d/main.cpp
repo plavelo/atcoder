@@ -25,7 +25,23 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    auto [l, q] = getpair<int, int>();
+    auto log = set<int>{0, l};
+    int c, x;
+    while (cin >> c >> x)
+    {
+        if (c == 1)
+        {
+            log.insert(x);
+        }
+        else
+        {
+            auto itr = log.upper_bound(x);
+            auto right = *itr;
+            auto left = *prev(itr);
+            cout << right - left << "\n";
+        }
+    }
 }
 
 int main()
