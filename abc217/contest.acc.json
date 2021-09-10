@@ -31,13 +31,23 @@
       "id": "abc217_c",
       "label": "C",
       "title": "Inverse of Permutation",
-      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_c"
+      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc217_d",
       "label": "D",
       "title": "Cutting Woods",
-      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_d"
+      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc217_e",

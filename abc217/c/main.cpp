@@ -25,7 +25,25 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    int n = getvalue<int>();
+    auto ps = getvalues<int>();
+    auto table = unordered_map<int, int>{};
+    for (const auto &p : ps | adaptor::indexed())
+    {
+        table[p.value()] = (int)p.index() + 1;
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        if (i == 1)
+        {
+            cout << table[i];
+        }
+        else
+        {
+            cout << " "s << table[i];
+        }
+    }
+    cout << endl;
 }
 
 int main()
