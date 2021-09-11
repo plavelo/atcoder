@@ -20,7 +20,12 @@
       "id": "abc216_b",
       "label": "B",
       "title": "Same Name",
-      "url": "https://atcoder.jp/contests/abc216/tasks/abc216_b"
+      "url": "https://atcoder.jp/contests/abc216/tasks/abc216_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc216_c",
