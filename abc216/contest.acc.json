@@ -31,7 +31,12 @@
       "id": "abc216_c",
       "label": "C",
       "title": "Many Balls",
-      "url": "https://atcoder.jp/contests/abc216/tasks/abc216_c"
+      "url": "https://atcoder.jp/contests/abc216/tasks/abc216_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc216_d",

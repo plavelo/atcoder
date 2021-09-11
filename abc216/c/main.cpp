@@ -29,7 +29,23 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    ll n = getvalue<ll>();
+    string res;
+    while (n > 0)
+    {
+        if (n % 2 == 0)
+        {
+            res += "B";
+            n /= 2;
+        }
+        else
+        {
+            res += "A";
+            n--;
+        }
+    }
+    reverse(res.begin(), res.end());
+    cout << res << endl;
 }
 
 int main()
