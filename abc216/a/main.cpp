@@ -26,7 +26,22 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    auto xy = vector<string>{};
+    boost::split(xy, getvalue<string>(), boost::is_any_of("."));
+    auto x = stoi(xy[0]);
+    auto y = stoi(xy[1]);
+    if (0 <= y && y <= 2)
+    {
+        cout << x << "-\n";
+    }
+    else if (3 <= y && y <= 6)
+    {
+        cout << x << endl;
+    }
+    else
+    {
+        cout << x << "+\n";
+    }
 }
 
 int main()
