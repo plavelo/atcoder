@@ -8,8 +8,11 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
-            "args": [],
+            "program": "${fileDirname}/main",
+            "args": [
+                "<",
+                "${fileDirname}/tests/sample-1.in"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
