@@ -31,7 +31,12 @@
       "id": "abc214_c",
       "label": "C",
       "title": "Distribution",
-      "url": "https://atcoder.jp/contests/abc214/tasks/abc214_c"
+      "url": "https://atcoder.jp/contests/abc214/tasks/abc214_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc214_d",
