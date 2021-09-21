@@ -20,7 +20,12 @@
       "id": "abc219_b",
       "label": "B",
       "title": "Maritozzo",
-      "url": "https://atcoder.jp/contests/abc219/tasks/abc219_b"
+      "url": "https://atcoder.jp/contests/abc219/tasks/abc219_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc219_c",
