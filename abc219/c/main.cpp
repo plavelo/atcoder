@@ -30,7 +30,33 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    auto x = getvalue<string>();
+    auto xm = unordered_map<char, int>{};
+    for (int i = 0; i < (int)x.size(); i++)
+    {
+        xm[x[i]] = i;
+    }
+    getvalue<int>();
+    auto ss = getlines<string>();
+    auto comp = [&](const string &lh, const string &rh)
+    {
+        auto lhl = lh.size();
+        auto rhl = rh.size();
+        auto target = (int)min(lhl, rhl);
+        for (int i = 0; i < target; i++)
+        {
+            if (xm[lh[i]] != xm[rh[i]])
+            {
+                return xm[lh[i]] < xm[rh[i]];
+            }
+        }
+        return lhl < rhl;
+    };
+    sort(ss.begin(), ss.end(), comp);
+    for (auto s : ss)
+    {
+        cout << s << "\n";
+    }
 }
 
 int main()

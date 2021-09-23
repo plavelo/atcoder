@@ -31,7 +31,12 @@
       "id": "abc219_c",
       "label": "C",
       "title": "Neo-lexicographic Ordering",
-      "url": "https://atcoder.jp/contests/abc219/tasks/abc219_c"
+      "url": "https://atcoder.jp/contests/abc219/tasks/abc219_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc219_d",
