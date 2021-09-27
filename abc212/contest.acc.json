@@ -20,7 +20,12 @@
       "id": "abc212_b",
       "label": "B",
       "title": "Weak Password",
-      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_b"
+      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc212_c",
