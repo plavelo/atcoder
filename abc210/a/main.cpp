@@ -20,7 +20,7 @@ using ll = long long;
 template <typename T> inline T getvalue(){T r;string s;getline(cin, s);istringstream(s)>>r;return r;}
 template <typename T> inline vector<T> getvalues(){vector<T> v;T r;string s;getline(cin,s);istringstream iss(s);while(iss>>r){v.push_back(r);}return v;}
 template <typename T> inline vector<T> getlines(){vector<T> v;T r;string s;while(getline(cin,s)){istringstream iss(s);iss>>r;v.push_back(r);}return v;}
-template <typename T, typename S> inline tuple<T,S> getpair(){T r1;S r2;string s;getline(cin,s);istringstream iss(s);iss>>r1>>r2;return {r1,r2};}
+template <typename T,typename S> inline tuple<T,S> getpair(){T r1;S r2;string s;getline(cin,s);istringstream iss(s);iss>>r1>>r2;return {r1,r2};}
 template <typename T,typename S,typename R> inline tuple<T,S,R> gettriple(){T r1;S r2;R r3;string s;getline(cin,s);istringstream iss(s);iss>>r1>>r2>>r3;return {r1,r2,r3};}
 template <typename T,typename S,typename R,typename Q> inline tuple<T,S,R,Q> getquad(){T r1;S r2;R r3;Q r4;string s;getline(cin,s);istringstream iss(s);iss>>r1>>r2>>r3>>r4;return {r1,r2,r3,r4};}
 template <typename T> inline string join(vector<T>& v,string d){stringstream s;copy(v.begin(),v.end(),ostream_iterator<T>(s,d.c_str()));return s.str();}
@@ -32,7 +32,15 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    auto [n, a, x, y] = getquad<int, int, int, int>();
+    if (n > a)
+    {
+        cout << a * x + (n - a) * y << "\n";
+    }
+    else
+    {
+        cout << n * x << "\n";
+    }
 }
 
 int main()
