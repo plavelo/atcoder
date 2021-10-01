@@ -20,7 +20,12 @@
       "id": "abc210_b",
       "label": "B",
       "title": "Bouzu Mekuri",
-      "url": "https://atcoder.jp/contests/abc210/tasks/abc210_b"
+      "url": "https://atcoder.jp/contests/abc210/tasks/abc210_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc210_c",
