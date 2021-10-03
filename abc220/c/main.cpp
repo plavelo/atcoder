@@ -33,7 +33,26 @@ template <typename T> inline bool chmax(T& a, const T& b){bool compare=a<b;if(a<
 
 void logic()
 {
-    // write your code here
+    auto n = getvalue<ui>();
+    auto as = getvalues<ll>();
+    auto x = getvalue<ll>();
+    ll sum = 0;
+    for (auto a : as)
+    {
+        sum += a;
+    }
+    ll counter = n * (x / sum);
+    ll acc = (x / sum) * sum;
+    for (ll i = 0; i < n; i++)
+    {
+        acc += as[i];
+        counter++;
+        if (acc > x)
+        {
+            cout << counter << "\n";
+            return;
+        }
+    }
 }
 
 int main()
